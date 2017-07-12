@@ -12,3 +12,11 @@
 .bullets {
 	font-size: .8em;
 }
+
+h3:hover {
+	color: red;
+}
+
+#personal-objective p::first-line {
+	color: blue;
+}

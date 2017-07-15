@@ -19,6 +19,7 @@ cite {
   display: inline-block;
   vertical-align: top;
   padding-right: 5px;
+  min-width: 165px;
 }
 
 main {
@@ -26,8 +27,8 @@ main {
   display: inline-block;
   vertical-align: top;
   padding-left: 5px;
+  min-width: 560px;
 }
-
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like,
@@ -46,8 +47,35 @@ figcaption {
   text-align: right;
 }
 
-
 body {
   max-width: 960px;
   min-width: 480px;
 }
+
+@media screen and (max-width: 875px) {
+  #external-links {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  main {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1{
+    font-size: 26px;
+  }
+}
+
+
+/*
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+*/

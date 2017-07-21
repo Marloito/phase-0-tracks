@@ -1,17 +1,15 @@
-
-
 def encrypt(password)
   index = 0
-  #value = "z"
-    while index < password.length
+  while index < password.length
+    if password[index] == "z"
+      password[index] = "a"  
+    else  
       password[index] = password[index].next!
-      index += 1
-      	#if password.include? value
-      	#	value.gsub("z", "a")
-      	#end	
-    end
-    p password
-end
+    end  
+    index += 1   
+  end  
+  p password
+end 
 
 def decrypt(encrypted_password)
 	alphabet = "abcdefghijklmnopqrstuvwxyz"	
@@ -31,13 +29,10 @@ end
 #decrypt(encrypt("swordfish"))
 
 valid_answer = false
+puts "Would you like to decrypt or encrypt a password?"
 
 until valid_answer
-
-  puts "Would you like to decrypt or encrypt a password?"
-
-  answer = gets.chomp
-
+answer = gets.chomp 
   if answer == "encrypt"
     puts "Please choose a password."
     valid_answer = true
@@ -57,12 +52,4 @@ else
   decrypt(password_input)
 end
 
-def decrypt(encrypted_password)
-	alphabet = "abcdefghijklmnopqrstuvwxyz"	
-	letter_place = 0
-		while letter_place < encrypted_password.length
-			encrypted_password[letter_place] = alphabet[alphabet.index(encrypted_password[letter_place]) - 1] 
-			letter_place += 1
-		end
-		puts encrypted_password
-end	
+

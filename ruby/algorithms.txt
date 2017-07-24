@@ -8,3 +8,13 @@ ROBOT ELEVATOR
 -Press button
 
 
+DRINKING WATER
+-Scan counter from left to right for glass of water
+-Pick up glass of water
+-Until not thirsty
+	-take sip of water
+	-if glass is empty
+		-place glass under faucet (sink)
+		-turn on faucet (to fill glass)
+		-turn off faucet when glass is 90% full
+-Put glass down on counter

@@ -1,0 +1,10 @@
+Robot Elevator Algorithm
+
+-When floor_needed is received
+-Start at button A1 (top left)
+-Until button_number is the same as floor_needed
+	-Until there are no more buttons moving to the right
+		-
+	-Stop
+-Press button_number	
+-Stop	

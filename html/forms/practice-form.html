@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Success</title>
+</head>
+<body>
+	<h1>Make Happy</h1>
+	<form action="success.html" method="post">
+		<div>
+			<label>First Name: </label>
+			<input type="text" name="firstName">
+			<br/>
+			<label>Last Name: </label>
+			<input type="text" name="lastName">
+		</div>
+		<div>
+			<label>Gender: </label>
+			<br />
+			<input type="radio" name="gender" value="male" checked> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="other"> Other<br>
+		</div>
+		<div>
+			<label>Email Address: </label>
+			<input type="email" name="email">
+			<br/>
+			<label>Password: </label>
+			<input type="password" name="password">
+		</div>
+		<div>
+			<textarea name="currentLevel" rows="15" cols="60">Use this space to write a bit about your current level of happiness...</textarea>
+		</div>
+		<div>
+			<label>Daily focus: </label>
+			<select name="dailyFocus">
+				<option value="smile">Smile</option>
+				<option value="give">Give</option>
+				<option value="rest">Rest</option>
+			</select>
+		</div>
+		<div>
+			<input type="submit" name="Submit">
+			<input type="reset" name="Reset">
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+ROBOT ELEVATOR
+- Move forward until the top row is reached (Row 1).
+- Move left along Row 1 until the 1st column is reached (column A).
+- Until the floor_number is the same as the button_number 
+	-until you reach the last column (column D)
+		-move right one button
+	-move down one row and back to column A
+-Press button
+
+
+DRINKING WATER
+-Scan counter from left to right for glass of water
+-Pick up glass of water
+-Until not thirsty
+	-take sip of water
+	-if glass is empty
+		-place glass under faucet (sink)
+		-turn on faucet (to fill glass)
+		-turn off faucet when glass is 90% full
+-Put glass down on counter

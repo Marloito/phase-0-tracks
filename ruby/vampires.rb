@@ -51,31 +51,10 @@ until employees_processed == 0
 	else
 	 puts "Results inconlusive"
 	end 	
-
 	employees_processed -= 1
 end
-=begin ----tests variables-----
-puts "applicants name is #{applicant_name}"
-puts "applicant age is #{applicant_age}"
-puts "do the have correct age? #{correct_age}"
-puts "do they want garlic? #{applicant_want_garlic}"
-puts "do they want insurance? #{applicant_want_insurance}"
-=end 
-=begin
-wolves_like_sunshine = true
-wolves_like_garlic = true
-vampires_like_sunshine = false
-vampires_like_garlic = false
 
-puts wolves_like_garlic && wolves_like_sunshine
-puts wolves_like_garlic || vampires_like_garlic
-puts wolves_like_garlic && vampires_like_garlic
-puts wolves_like_garlic && (vampires_like_sunshine || vampires_like_garlic)
-puts (wolves_like_garlic && vampires_like_garlic) || wolves_like_sunshine
-puts vampires_like_garlic
-puts !vampires_like_garlic
-puts !(wolves_like_sunshine && wolves_like_garlic)
-=end
+puts	"Actually, never mind! What do these questions have to do with anything? Let's all be friends."
 
 
 	

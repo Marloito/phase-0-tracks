@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #9fb5d4;
+  color: #e7e7e7;
+}
+
+header {
+  background: #696969;
+  display: block;
+  color: #cec7b8;    
+}
+
+footer {
+  background: #696969;
+  display: block;
+  margin-top: 20px;
+  color: #cec7b8;  
+}
+
+.column-1 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2.5%;
+}
+
+.column-2 {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+details {
+  text-align: left;
+}
+
+a{
+  color: #2F4F4F;
+}
+
+h2 {
+  color: #696969;
+}

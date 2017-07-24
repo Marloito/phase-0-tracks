@@ -32,18 +32,26 @@ until employees_processed == 0
 			applicant_want_insurance = false
 		end		
 
-	if applicant_name == "Drake Cula" || applicant_name == "Tu Fang"
-			puts "Definitely a vampire"
+	puts "List any allergies. Type 'done' when finished"
+	applicant_allergies = ""
+	until applicant_allergies.include? "done" or applicant_allergies.include? "sunshine"
+		applicant_allergies = gets.chomp
+	end	
+
+	if applicant_allergies == "sunshine"
+		puts "Probably a vampire."
+	elsif applicant_name == "Drake Cula" || applicant_name == "Tu Fang"
+		puts "Definitely a vampire"
 	elsif !correct_age && !applicant_want_garlic && !applicant_want_insurance
 		puts "Almost certainly a vampire."		
-	elsif	(applicant_want_garlic || applicant_want_insurance) && correct_age
+	elsif	applicant_want_garlic || applicant_want_insurance && correct_age
 		puts "Probably not a vampire."		
-	elsif (!applicant_want_garlic || !applicant_want_insurance) && !correct_age
+	elsif !applicant_want_garlic || !applicant_want_insurance && !correct_age 
 		puts "Probably a vampire."
 	else
 	 puts "Results inconlusive"
 	end 	
-		
+
 	employees_processed -= 1
 end
 =begin ----tests variables-----

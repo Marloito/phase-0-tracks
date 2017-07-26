@@ -34,3 +34,24 @@ client_info[:has_kids] = kids_input
 
 #print out 
 p client_info
+
+#update info
+puts "Would you like to update any info (category/no)?"
+category_update = gets.chomp.to_sym
+puts "What is your new answer?"
+new_input = gets.chomp
+if category_update == :has_kids
+	if	new_input == "y"
+		new_input = true
+	else
+		new_input = false
+	end	
+elsif category_update == :age	
+	new_input = new_input.to_i
+end
+
+#update hash
+client_info[category_update] = new_input
+
+#print out hash
+p client_info

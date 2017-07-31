@@ -1,6 +1,6 @@
 friends = {
 	sara: {
-		nickname: "sare bear",
+		nickname: 'sare bear',
 		location: {
 			state: "WA",
 			city: "Tacoma"
@@ -12,7 +12,7 @@ friends = {
 		]
 	},
 	greg: {
-		nickname: "gregy bear",
+		nickname: "gregy",
 		location: {
 			state: "WA",
 			city: "Seattle"
@@ -30,7 +30,17 @@ friends = {
 		},
 		favorite_foods: [
 			"orange",
-			"ice cream"
+			"ice cream",
+			"cake"
 		]
 	}
 }
+
+#pulling information---------------------------
+
+
+puts "Greg's nickname is #{friends[:greg][:nickname].capitalize}."
+puts "Sara is from #{friends[:sara][:location][:city]}, #{friends[:sara][:location][:state]}."
+p friends[:victoria][:favorite_foods] 
+puts " reversed is "
+p friends[:victoria][:favorite_foods].reverse

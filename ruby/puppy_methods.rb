@@ -64,8 +64,7 @@ x = 0
 sport_instances = []
 
 until x == 50 
-	instance = Sport.new
-	sport_instances	<< instance
+	sport_instances	<< Sport.new
 	x += 1	
 end	
 

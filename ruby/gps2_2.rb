@@ -19,7 +19,10 @@ end
 # steps: push the key and value into hash
 # print hash
 # output: hash
-def add_item(list, item, quantity)
+
+#updated from add_item to add_change_item
+def add_change_items(list, item, quantity)
+	#NOTE if changing item make sure to type in 'item' correctly
   list[item] = quantity
   p list
 end
@@ -42,10 +45,12 @@ end
 # steps: alter the value connected to specific key
 # output: print updated hash
 
+=begin -------------- same as add_item, updating to reflect
 def change_quantity(list, item, new_quantity)
   list[item] = new_quantity
   p list
 end	
+=end
 
 #change_quantity(shopping_list, "pizza", 3)
 
@@ -61,11 +66,11 @@ end
 #print_list(shopping_list)  
 
 list = create_list("Lemonade Tomatoes Onions Ice_Cream")
-change_quantity(list, "Lemonade", 2)
-change_quantity(list, "Tomatoes", 3)
-change_quantity(list, "Ice_Cream", 4)
+add_change_items(list, "Lemonade", 2)
+add_change_items(list, "Tomatoes", 3)
+add_change_items(list, "Ice_Cream", 4)
 remove_item(list, "Lemonade")
-change_quantity(list, "Ice_Cream", 1)
+add_change_items(list, "Ice_Cream", 1)
 
 print_list(list)
 
@@ -86,6 +91,7 @@ in the method.
 -You can pass information between methods by calling a method in another method. 
 
 -What information can be used in methods has been solidified. A concept that is still confusing 
-to me is how to affect different areas in an array in patterns (1st, 3rd, 5th).
+to me is how to affect different areas in an array in patterns (1st, 3rd, 5th). Also how to keep 
+certain strigns together using split ("ice cream") without using dash/underscore
 
 =end

@@ -71,5 +71,21 @@ print_list(list)
 
 #REFLECT----------------------------
 =begin
-	
+
+-It's difficult for me to pseudocode obstacles that seem easier for me to conquer with code. 
+I also find it difficult to write out my solutions in plain english instead of in code. 
+
+-Being able to link data using hashes makes certain tasks much easier. However a strength of 
+arrays is being able seperate strings into arrays in order to iterate through them. 
+
+-A method returns an object, and unless explicitly told a method will return the last statement
+in the method.
+
+-You can pass variables, strings, booleans, integers, and other methods into a method. 
+
+-You can pass information between methods by calling a method in another method. 
+
+-What information can be used in methods has been solidified. A concept that is still confusing 
+to me is how to affect different areas in an array in patterns (1st, 3rd, 5th).
+
 =end

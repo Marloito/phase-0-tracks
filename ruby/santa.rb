@@ -91,7 +91,7 @@ puts "Nick's new gender: #{nick.gender}"
 genders = ["female", "male", "prefer not to answer", "gender fluid", "gender non-conforming", "N/A"]
 ehtnicities = ["Japanese", "Okinawan", "Norweigian", "black", "prefer not to answer", "N/A"]
 
-50.times do
+1000.times do
 	santa = Santa.new(genders.sample, ehtnicities.sample)
 	santa.age = rand(0..140)
 	puts "Age: #{santa.age}, Ethnicity: #{santa.ethnicity}, Gender: #{santa.gender}."

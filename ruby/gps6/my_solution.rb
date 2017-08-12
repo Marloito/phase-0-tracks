@@ -38,8 +38,6 @@ class VirusPredictor
 # determines estimated number of deaths based on population density of the state 
 # prints a string 
 # .floor rounds down to the lower whole number
-density = 200
-rate_of_death = 0.4
 
  def predicted_deaths
    # predicted deaths is solely based on population density 

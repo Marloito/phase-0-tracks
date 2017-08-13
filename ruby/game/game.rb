@@ -24,7 +24,7 @@ class WordGame
     if @original_word == @guess 
       @correct_guess = true
     else 
-      false
+      @correct_guess = false
     end
   end
 
@@ -70,6 +70,7 @@ word.each { |letter| print letter }
 
 puts @guess
 puts @original_word
+p @correct_guess
 
 
 

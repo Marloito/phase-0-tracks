@@ -12,9 +12,18 @@
 original_word = "hello"
 word = original_word.split("")
 
-guess = "e"
+puts "original_word: #{original_word}"
+puts "word: #{word}"
 
-if original_word.include? guess
+puts
+
+guess = "l"
+
+p original_word == guess
+
+if original_word == guess 
+  puts "Correct! The secret word was:"
+elsif original_word.include? guess 
 	word.map! do |letter|
 		if letter == guess
 			letter
@@ -22,28 +31,14 @@ if original_word.include? guess
 			"-"
 		end
 	end
-else word.map! { |letter| "-"}	
+else puts "Try again!"
+  word.map! { |letter| "-"}
 end
 
 word.each { |letter| print letter }
+word = original_word.split("")
 
-#line break
-puts ""
 
-guess = "h"
-
-if original_word.include? guess
-	word.map! do |letter|
-		if letter == guess
-			letter
-		else
-			"-"
-		end
-	end
-else word.map! { |letter| "-"}	
-end
-
-word.each { |letter| print letter }	
 
 
 

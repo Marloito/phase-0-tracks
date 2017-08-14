@@ -1,4 +1,4 @@
-/*//RELEASE 0 - arrays
+//RELEASE 0 - arrays
 var colors = ["blue", "green", "yellow","red"];
 
 var names = ["Sal", "Mystic", "Flash", "Ed"];
@@ -24,7 +24,7 @@ for (var index = 0; index < length; index++ ) {
 }
 
 console.log(horses)
-*/
+
 
 //RELEASE 2 - constructor functions
 
@@ -55,7 +55,7 @@ var car1 = new Car("Toyota", "Corola", "Indigo", false);
 var car2 = new Car("Honda", "Civic", "White", true);
 var car3 = new Car("Nissan", "Skyline", "Midnight Black", true);
 
-console.log(car1)
+/*console.log(car1)
 car1.honk();
 car1.start();
 
@@ -69,3 +69,13 @@ car3.start();
 
 car2.trimLevel = "Si"
 console.log(car2)
+*/
+//RELEASE 3 - Loop & Reflect
+
+for (key in car1) {
+	console.log("Key: " + key);
+	console.log("Value: " + car1[key]);
+	console.log("---")
+}
+
+

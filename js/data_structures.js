@@ -1,4 +1,4 @@
-//RELEASE 0
+//RELEASE 0 - arrays
 var colors = ["blue", "green", "yellow","red"];
 
 var names = ["Sal", "Mystic", "Flash", "Ed"];
@@ -12,7 +12,7 @@ names.push("Fire");
 console.log(colors)
 console.log(names)
 
-//RELEASE 1
+//RELEASE 1 - objects (like hashes in Ruby)
 //console.log(names[0])  //using as test code
 
 var horses = {}
@@ -24,3 +24,27 @@ for (var index = 0; index < length; index++ ) {
 }
 
 console.log(horses)
+
+//RELEASE 2 - constructor functions
+
+function Car(make, model, color, runs) {
+
+	console.log("Creating new car...", this);
+
+	this.make = make;
+	this.model = model;
+	this.color = color;
+	this.runs = runs;
+
+	this.honk = function() { console.log("*honk!*"); };
+
+	this.start = function() {
+		if (this.runs) {
+			console.log("*engine revs*");
+		} else {
+			console.log("*engine putters out*");
+		}
+	}
+
+	console.log("Car initialized")
+};

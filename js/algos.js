@@ -1,4 +1,4 @@
-//RELEASE0
+//RELEASE0 ----------------------------------------------------------
 /*
 //takes array as method
 function someFunction(array) { --some code-- }
@@ -40,7 +40,6 @@ function longestString(array) {
 
 	console.log(array[length.indexOf(index)]);
 }
-/*
 
 var array0 = ['hello', 'hello how are you?', 'hi'];
 var array1 = ['bye', 'goodbye', 'bye bye, have a good evening!'];
@@ -50,7 +49,7 @@ longestString(array0);
 longestString(array1);
 longestString(array2);
 
-//RELEASE 1
+//RELEASE 1------------------------------------------------------------------
 //**need to turn hash like object into an array**
 //set a an array variable to hold new content (global) (string for now)
 //function needs to take a hash-like object as parameter
@@ -136,9 +135,7 @@ console.log(containsMatch(data, moreData))
 console.log(containsMatch(data, anotherData))
 console.log(containsMatch(anotherData, moreData))
 
-*/
-
-//RELEASE 2
+//RELEASE 2--------------------------------------------------------------------------
 
 //generate random letter -- test code
 	//var alphabet = "abcdefghijklmnopqrstuvwxyz";

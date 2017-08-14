@@ -139,10 +139,51 @@ console.log(containsMatch(anotherData, moreData))
 
 //RELEASE 2
 
-//take number as parameter
-//generate array of strings that length
-//each string random 
-//min 1 max 10 letters
+//generate random letter -- test code
+	//var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	//console.log("letter is " + alphabet.charAt(Math.floor(Math.random() * alphabet.length)))
+
+//generate random word length between 1-10
+function generateWord() {
+	var wordLength = Math.floor((Math.random() * 10) + 1)
+	var alphabet = "abcdefghijklmnopqrstuvwxyz";
+	var word = "";
+
+	for (var i = 0; i < wordLength + 1; i++) {
+		word += alphabet.charAt(Math.floor(Math.random() * alphabet.length))
+	}
+
+	return word;
+}
+
+//push word into array
+var array = [];
+function pushToArray(word) {
+	array.push(word)
+}
+
+//repeat x times
+function generateArray(numberOfWords) {
+	array = [];
+	for (var i = numberOfWords; i > 0; i--) {
+		pushToArray(generateWord())
+	}
+	console.log(array)
+}
+
+generateArray(4)
+
+
+function makeid() {
+  var text = "";
+  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+  for (var i = 0; i < 5; i++)
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+  return text;
+}
+
 
 //10 times 
 //generated array

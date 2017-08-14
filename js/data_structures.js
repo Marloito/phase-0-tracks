@@ -55,7 +55,7 @@ var car1 = new Car("Toyota", "Corola", "Indigo", false);
 var car2 = new Car("Honda", "Civic", "White", true);
 var car3 = new Car("Nissan", "Skyline", "Midnight Black", true);
 
-/*console.log(car1)
+console.log(car1)
 car1.honk();
 car1.start();
 
@@ -69,13 +69,30 @@ car3.start();
 
 car2.trimLevel = "Si"
 console.log(car2)
-*/
+
 //RELEASE 3 - Loop & Reflect
 
+function printInfo(car) {
+	for (key in car) {
+		console.log("Key: " + key);
+		console.log("Value: " + car[key]);
+		console.log("---")
+	}
+}
+
+printInfo(car2)
+
+//if you are looping through hash like objects it is difficult to loop through 
+//to make seperate updates to values
+
+//constructor methods make it simple to create many objects in javascript
+//but the objects created have less flexibility later on
+
+
+/* test code
 for (key in car1) {
 	console.log("Key: " + key);
 	console.log("Value: " + car1[key]);
 	console.log("---")
 }
-
-
+*/

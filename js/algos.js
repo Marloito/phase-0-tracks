@@ -138,3 +138,13 @@ console.log(containsMatch(anotherData, moreData))
 */
 
 //RELEASE 2
+
+//take number as parameter
+//generate array of strings that length
+//each string random 
+//min 1 max 10 letters
+
+//10 times 
+//generated array
+//prints array
+//feeds to longestString (already prints result)

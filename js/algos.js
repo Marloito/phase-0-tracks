@@ -1,5 +1,5 @@
 //RELEASE0
-/* 
+/*
 //takes array as method
 function someFunction(array) { --some code-- }
 //puts length of each string into new array
@@ -28,7 +28,7 @@ console.log(arr1[arr1Length.indexOf(9)]);
 console.log(arr1[arr1Length.indexOf(index)]);
 */
 
-/*
+
 function longestString(array) {
 	var length = [];
 
@@ -40,6 +40,7 @@ function longestString(array) {
 
 	console.log(array[length.indexOf(index)]);
 }
+/*
 
 var array0 = ['hello', 'hello how are you?', 'hi'];
 var array1 = ['bye', 'goodbye', 'bye bye, have a good evening!'];
@@ -144,6 +145,7 @@ console.log(containsMatch(anotherData, moreData))
 	//console.log("letter is " + alphabet.charAt(Math.floor(Math.random() * alphabet.length)))
 
 //generate random word length between 1-10
+	//add character in the alphabet to word with random amount of letters
 function generateWord() {
 	var wordLength = Math.floor((Math.random() * 10) + 1)
 	var alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -163,6 +165,10 @@ function pushToArray(word) {
 }
 
 //repeat x times
+	//reset array so function is reusable
+	//for however many words
+		//push a random word into the array
+		//print the array
 function generateArray(numberOfWords) {
 	array = [];
 	for (var i = numberOfWords; i > 0; i--) {
@@ -171,21 +177,20 @@ function generateArray(numberOfWords) {
 	console.log(array)
 }
 
-generateArray(4)
 
-
-function makeid() {
-  var text = "";
-  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-
-  for (var i = 0; i < 5; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-  return text;
-}
 
 
 //10 times 
 //generated array
 //prints array
 //feeds to longestString (already prints result)
+
+function runLongestString(numberOfTimes) {
+	var times = Math.floor((Math.random() * 10) + 1);
+	for (var i = numberOfTimes; i > 0; i--) {
+		generateArray(times)
+		longestString(array)
+	}	
+}
+
+runLongestString(10)

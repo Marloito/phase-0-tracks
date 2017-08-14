@@ -178,16 +178,15 @@ function generateArray(numberOfWords) {
 }
 
 
-
-
 //10 times 
-//generated array
+//generate array
 //prints array
 //feeds to longestString (already prints result)
 
 function runLongestString(numberOfTimes) {
-	var times = Math.floor((Math.random() * 10) + 1);
 	for (var i = numberOfTimes; i > 0; i--) {
+		console.log(i + ".")
+		var times = Math.floor((Math.random() * 5) + 1);
 		generateArray(times)
 		longestString(array)
 	}	

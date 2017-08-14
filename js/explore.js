@@ -37,6 +37,14 @@ reverse("hello")
 reverse("Marlo Ito")
 
 
+if(1 == 1) reverse("palindrome") 
+
+if (2 > 1) {
+	reverse("magic")
+}
+
+
+
 
 
 

@@ -50,3 +50,45 @@
 		3|Gordon Simon|false|3
 		4|Sara Bragg|true|2
 		5|Carry Smith|true|3
+
+JOINS
+	INPUT
+		SELECT * FROM students
+		LEFT JOIN highschool
+		ON students.highschool_id = highschool.id;
+	OUTPUT
+
+	INPUT
+		SELECT * FROM students
+		RIGHT JOIN highschool
+		ON students.highschool_id = highschool.id;	
+	OUTPUT
+		Error: RIGHT and FULL OUTER JOINs are not currently supported
+
+	INPUT
+		SELECT applied_to_college FROM students
+		INNER JOIN highschool
+		ON students.highschool_id = highschool.id;	
+	OUTPUT
+		true
+		false
+		true
+		true
+
+NEW TABLE 
+1|Paul Brown|true|1
+3|Gordon Simon|false|3
+4|Sara Bragg|true|2
+5|Carry Smith|true|3
+6|New|false|4
+
+	INPUT
+		SELECT students.name, highschool.name FROM students
+		LEFT JOIN highschool
+		ON students.highschool_id = highschool.id;	
+	OUTPUT
+		Paul Brown|Castle Highschool
+		Gordon Simon|Aiea Highschool
+		Sara Bragg|Kapiolani Highschool
+		Carry Smith|Aiea Highschool
+		New|

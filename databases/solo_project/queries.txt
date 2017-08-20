@@ -1,0 +1,52 @@
+1. Display the information in one table (either table is fine).
+	INPUT
+		SELECT * FROM students;
+	OUTPUT
+		1|Paul Brown|true|1
+		2|Frank Caneloni|true|2
+		3|Gordon Simon|false|3
+		4|Sara Bragg|false|2
+		5|Carry Smith|true|3	
+
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+	INPUT
+		UPDATE students SET applied_to_college = "true" WHERE name = "Sara Bragg";
+	OUTPUT
+		none -- but new row display is below <SELECT * FROM students WHERE id=4;>
+
+		4|Sara Bragg|true|2
+
+3. Display the information in both tables using one query.
+	INPUT
+		SELECT * FROM students,
+		highschool WHERE students.highschool_id = highschool.id;
+	OUTPUT
+		1|Paul Brown|true|1|1|Castle Highschool
+		2|Frank Caneloni|true|2|2|Kapiolani Highschool
+		3|Gordon Simon|false|3|3|Aiea Highschool
+		4|Sara Bragg|true|2|2|Kapiolani Highschool
+		5|Carry Smith|true|3|3|Aiea Highschool	
+
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+	INPUT
+		SELECT students.name, highschool.name 
+		FROM students JOIN highschool 
+		ON students.highschool_id = highschool.id; 
+	OUTPUT
+		Paul Brown|Castle Highschool
+		Frank Caneloni|Kapiolani Highschool
+		Gordon Simon|Aiea Highschool
+		Sara Bragg|Kapiolani Highschool
+		Carry Smith|Aiea Highschool	
+
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+	INPUT
+		DELETE FROM students
+		WHERE name = "Frank Caneloni";
+	OUTPUT
+		none -- but new table display below <SELECT * FROM students;>
+		
+		1|Paul Brown|true|1
+		3|Gordon Simon|false|3
+		4|Sara Bragg|true|2
+		5|Carry Smith|true|3

@@ -33,4 +33,4 @@ end
 
 #show the data you are working with
 #p example.class
-p example.length
+p example

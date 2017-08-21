@@ -1,0 +1,40 @@
+Join 3 Tables-------------------------------------------------------
+
+INPUT
+	SELECT * 
+	FROM users 
+	JOIN reviews ON users.id = reviews.user_id
+	JOIN businesses ON businesses.id = reviews.business_id;
+
+OUTPUT
+	2|Mandy|Kaling|1|5|Great!|1|2|1|Grundy Hallow Wedding Chapel
+	1|Bradford|Pitt|2|3|Eh, whatevs|4|1|4|Lostus Yoga
+	4|Steven|Wonder|3|4|Would go again|3|4|3|The Beagle Nightclub
+	3|Angela|Jolie|4|5|Awesome-sauce|2|3|2|Amir's Towing	
+
+Selective Data------------------------------------------------------
+
+INPUT
+	SELECT users.first_name, users.last_name, businesses.name, reviews.stars, reviews.comment
+	FROM users 
+	JOIN reviews ON users.id = reviews.user_id
+	JOIN businesses ON businesses.id = reviews.business_id;
+
+OUTPUT
+	Mandy|Kaling|Grundy Hallow Wedding Chapel|5|Great!
+	Bradford|Pitt|Lostus Yoga|3|Eh, whatevs
+	Steven|Wonder|The Beagle Nightclub|4|Would go again
+	Angela|Jolie|Amir's Towing|5|Awesome-sauce
+
+Data For One Business------------------------------------------------
+
+INPUT
+	SELECT *
+	FROM users 
+	JOIN reviews ON users.id = reviews.user_id
+	JOIN businesses ON businesses.id = reviews.business_id
+	WHERE reviews.business_id = 1;
+
+OUTPUT
+	2|Mandy|Kaling|1|5|Great!|1|2|1|Grundy Hallow Wedding Chapel
+

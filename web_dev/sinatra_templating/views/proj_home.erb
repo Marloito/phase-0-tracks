@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Database</title>
+</head>
+<body>
+	<h1>Welcome to the student database!</h1>
+	<p>Click <a href="student/update">here</a> to update student information.</p>
+	<p><button id="show">Show</button> student data.</p>
+	<p><button id="hide">Hide</button> student data.</p>
+	<ul>
+		<% @students.each do |student| %>
+		<li>ID: <%= student['id'] %> -- NAME: <%= student['name'] %> -- AGE: <%= student['age'] %> -- CAMPUS: <%= student['campus'] %></li>
+		<% end %>
+	</ul>
+	<script src="scripts.js"></script>
+</body>
+</html>
